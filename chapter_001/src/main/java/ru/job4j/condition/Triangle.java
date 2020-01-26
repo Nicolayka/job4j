@@ -6,14 +6,8 @@ public class Triangle {
         double first = ab + ac;
         double second = ac + bc;
         double third = ab + bc;
-        boolean result = true;
-
-        //String rsl = "Треугольник не существует";
-        if ((first > bc)&&(second > ab)&&(third > ac)){
-            System.out.println("Треугольник существует!");
-        } else {
-            System.out.println("Треугольник не существует");
-        }
+        boolean condition = ((first > bc)&&(second > ab)&&(third > ac));
+        boolean result = condition ? true : false;
         return result;
     }
 }

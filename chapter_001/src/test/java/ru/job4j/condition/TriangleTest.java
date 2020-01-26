@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 public class TriangleTest {
     @Test
     public void whenExist() {
-        boolean result = Triangle.exist(12, 14, 18);
+        boolean result = Triangle.exist(0, 0, 18);
         assertThat(result, is(true));
     }
 }
